@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>ExcelAnalysis-Documentation | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="1. UI panel description1.1 Main panelThe main interface is mainly divided into three areas：  File list on the left After loading files, all file lists are displayed Show file content in the middle The">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ExcelAnalysis-Documentation">
+<meta property="og:url" content="http://example.com/2020/12/13/ExcelAnalysis-Documentation_EN/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1. UI panel description1.1 Main panelThe main interface is mainly divided into three areas：  File list on the left After loading files, all file lists are displayed Show file content in the middle The">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/documention-mainpanel.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/settings.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/documention-language.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/settings.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/documention-rules.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/menu-open.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/menu-saveall.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/refresh.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/back.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/forward.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/compile.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/run.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/runAll.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/suspend.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/settings.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/logVerbose.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/fatalError.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/export.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/find.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/add.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/remove2.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/copy.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/setDefault.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/run.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/add.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/remove2.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/copy.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/@-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/@-2.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-2.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-3.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-4.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-5.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-6.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-7.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/wrong.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/wrong.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/date-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/date-2.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/number-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/number-2.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/duplicate-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/duplicate-2.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/empty-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/empty-2.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/relation-3.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/relation-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/number-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/number-2.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/!-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/!-2.png">
+<meta property="article:published_time" content="2020-12-13T11:38:18.000Z">
+<meta property="article:modified_time" content="2021-05-02T05:33:36.360Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Tool">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/documention-mainpanel.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-ExcelAnalysis-Documentation_EN" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/12/13/ExcelAnalysis-Documentation_EN/" class="article-date">
+  <time class="dt-published" datetime="2020-12-13T11:38:18.000Z" itemprop="datePublished">2020-12-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%BC%96%E7%A0%81/">编码</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      ExcelAnalysis-Documentation
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="1-UI-panel-description"><a href="#1-UI-panel-description" class="headerlink" title="1. UI panel description"></a>1. UI panel description</h1><h3 id="1-1-Main-panel"><a href="#1-1-Main-panel" class="headerlink" title="1.1 Main panel"></a>1.1 Main panel</h3><p>The main interface is mainly divided into three areas：</p>
+<ul>
+<li>File list on the left After loading files, all file lists are displayed</li>
+<li>Show file content in the middle</li>
+<li>The bottom shows the log output when parsing</li>
+</ul>
+<p><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/documention-mainpanel.png" alt="alt main_panel"></p>
+<h3 id="1-2-Set-panel"><a href="#1-2-Set-panel" class="headerlink" title="1.2 Set panel"></a>1.2 Set panel</h3><h4 id="1-2-1-Language"><a href="#1-2-1-Language" class="headerlink" title="1.2.1 Language"></a>1.2.1 Language</h4><p><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/settings.svg" alt="settings " style="display:inline" /> <code>Preference</code>  &gt; Language. Set the language, you need to restart after setting to take effect.</p>
+<p><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/documention-language.png" alt="alt main_panel"></p>
+<h4 id="1-2-2-Rules"><a href="#1-2-2-Rules" class="headerlink" title="1.2.2 Rules"></a>1.2.2 Rules</h4><p><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/settings.svg" alt="settings " style="display:inline" /> <code>Preference</code> &gt; Rules. Divided into rule file and rule configuration</p>
+<p>The above is the operation on the rule file. You can add multiple files, but only one file can take effect at the same time. This file can be managed with <code>git</code> or <code>svn</code> if necessary.</p>
+<p>The following is the specific configuration content of the display rule file. After clicking a file, the specific configuration content of the selected file will be displayed below.</p>
+<p>The storage of configuration files uses the <code>json</code> format.</p>
+<p><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/documention-rules.png" alt="alt main_panel"></p>
+<h1 id="2-Operation-button-description"><a href="#2-Operation-button-description" class="headerlink" title="2. Operation button description"></a>2. Operation button description</h1><h3 id="2-1-Main-panel"><a href="#2-1-Main-panel" class="headerlink" title="2.1 Main panel"></a>2.1 Main panel</h3><table>
+<thead>
+<tr>
+<th align="left">Icon</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/menu-open.svg" alt="open"></td>
+<td align="left">Open…</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/menu-saveall.svg" alt="saveAll"></td>
+<td align="left">Save All</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/refresh.svg" alt="refresh"></td>
+<td align="left">Reload all file from disk</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/back.svg" alt="back"></td>
+<td align="left">Back</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/forward.svg" alt="forward"></td>
+<td align="left">Forward</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/compile.svg" alt="compile"></td>
+<td align="left">Build</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/run.svg" alt="run" style="zoom:120%;" /></td>
+<td align="left">Run（Enabled rule file）</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/runAll.svg" alt="runAll"></td>
+<td align="left">Run All</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/suspend.svg" alt="suspend"></td>
+<td align="left">Stop</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/settings.svg" alt="settings"></td>
+<td align="left">Preference</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/logVerbose.svg" alt="logVerbose"></td>
+<td align="left">Show/Hide Log</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/fatalError.svg" alt="fatalError"></td>
+<td align="left">Show/Hide Error</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/export.svg" alt="export"></td>
+<td align="left">Export analysis result</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/find.svg" alt="find"></td>
+<td align="left">Search Everywhere…</td>
+</tr>
+</tbody></table>
+<h3 id="2-2-Rule-setting-panel"><a href="#2-2-Rule-setting-panel" class="headerlink" title="2.2 Rule setting panel"></a>2.2 Rule setting panel</h3><h4 id="2-2-1-Rules-file-settings"><a href="#2-2-1-Rules-file-settings" class="headerlink" title="2.2.1 Rules file settings"></a>2.2.1 Rules file settings</h4><table>
+<thead>
+<tr>
+<th align="left">Icon</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/add.svg" alt="Add"></td>
+<td align="left">Add rule file</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/remove2.svg" alt="Remove"></td>
+<td align="left">Remove rule file</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/copy.svg" alt="Copy"></td>
+<td align="left">Copy rule file</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/setDefault.svg" alt="setDefault"></td>
+<td align="left">Set to default rulefile（<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/run.svg" alt="Run" style="display:inline;zoom:120%;" />Analyze according to the content of the default file when running）</td>
+</tr>
+</tbody></table>
+<h4 id="2-2-2-Rule-configuration-settings"><a href="#2-2-2-Rule-configuration-settings" class="headerlink" title="2.2.2 Rule configuration settings"></a>2.2.2 Rule configuration settings</h4><table>
+<thead>
+<tr>
+<th align="left">Icon</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/add.svg" alt="Add"></td>
+<td align="left">Add rule config</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/remove2.svg" alt="Remove"></td>
+<td align="left">Remove rule config</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/copy.svg" alt="Copy"></td>
+<td align="left">Copy rule config</td>
+</tr>
+</tbody></table>
+<h1 id="3-Rule-description"><a href="#3-Rule-description" class="headerlink" title="3. Rule description"></a>3. Rule description</h1><h3 id="3-1"><a href="#3-1" class="headerlink" title="3.1 @"></a>3.1 <strong>@</strong></h3><blockquote>
+<p>Grammar: &lt;any value&gt;</p>
+</blockquote>
+<p><code>@</code> is mainly used to replace output content. When the value of the excel file cell is equal to the configured <b>Key</b>, the <b>Value</b> will be displayed when displayed.</p>
+<p>For example, the following configuration：</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/@-1.png" alt="@-1.png" style="display:inline;" />
+
+<p>After saving the configuration. Open <code>商品表.xls</code> and display as follows：</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/@-2.png" alt="@-2.png" style="display:inline;" />
+
+<p>You can see that the eligible <code>Key</code> in the 商品价格 column has been replaced with <code>Value</code>.</p>
+<h3 id="3-2-amp"><a href="#3-2-amp" class="headerlink" title="3.2 &amp;"></a>3.2 &amp;</h3><p><code>&amp;</code> is mainly used to check if the picture exists. If it does not exist, an error log will be output.</p>
+<h4 id="3-2-1-Configure-the-full-name-including-extension"><a href="#3-2-1-Configure-the-full-name-including-extension" class="headerlink" title="3.2.1 Configure the full name (including extension)"></a>3.2.1 Configure the full name (including extension)</h4><blockquote>
+<p>Grammar：&lt;path&gt;</p>
+</blockquote>
+<p>When processing files containing extensions: directly take the values configured in the column (<code>icon_1</code>, <code>icon_2</code>, <code>icon_3</code>, <code>...</code> as shown in the figure below) to the rule directory <code>/Users/obiscr/Workspace/tmp/excel_analysis/foo</code>, and output the log if it does not exist.</p>
+<p>The configuration is as follows (selected row):</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-1.png" alt="&-1.png" style="display:inline;" />
+
+<p>After saving the configuration. Open <code>商品表.xls</code> and display as follows:</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-2.png" alt="&-2.png" style="display:inline;" />
+
+<p>Because foo is just an empty directory and all icons do not exist, an error log will be output.</p>
+<h4 id="3-2-2-Only-the-file-name-is-configured"><a href="#3-2-2-Only-the-file-name-is-configured" class="headerlink" title="3.2.2 Only the file name is configured"></a>3.2.2 Only the file name is configured</h4><blockquote>
+<p>Grammar：&lt;path&gt;|(suffix)</p>
+</blockquote>
+<p>In this case: only the file name is configured without the extension. You need to manually specify the possible extensions. The program will automatically splice <code>file name + extension</code>, and then go to the rule directory <code>/Users/obiscr/Workspace/tmp/excel_analysis/foo</code> to search, and output the log if it does not exist.</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-3.png" alt="&-3.png" style="display:inline;" />
+
+<p>Compared to the previous configuration, <code>|(png)</code> has been added.</p>
+<blockquote>
+<p>/Users/obiscr/Workspace/tmp/excel_analysis/foo</p>
+<p>/Users/obiscr/Workspace/tmp/excel_analysis/foo<font color='red'>|(png)</font></p>
+</blockquote>
+<h4 id="3-2-3-Only-the-file-name-is-configured-and-there-are-multiple-file-extensions"><a href="#3-2-3-Only-the-file-name-is-configured-and-there-are-multiple-file-extensions" class="headerlink" title="3.2.3 Only the file name is configured, and there are multiple file extensions"></a>3.2.3 Only the file name is configured, and there are multiple file extensions</h4><blockquote>
+<p>Grammar：&lt;path&gt;|(suffix1,suffix2…)</p>
+</blockquote>
+<p>If there are multiple extensions, each extension is separated by <code>,</code>.</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-4.png" alt="&-4.png" style="display:inline;" />
+
+<p>Compared with the previous configuration, a new extension <code>,jpg</code> has been added.</p>
+<blockquote>
+<p>/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png)</p>
+<p>/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png<font color='red'>,jpg</font>)</p>
+</blockquote>
+<h4 id="3-2-4-Has-Suffix"><a href="#3-2-4-Has-Suffix" class="headerlink" title="3.2.4 Has Suffix"></a>3.2.4 Has Suffix</h4><blockquote>
+<p>Grammar：&lt;path&gt;|(suffix)|{[extension1,extension2…]}</p>
+</blockquote>
+<p>For example, there are pictures <code>iconName_a.jpg</code>, <code>iconName_b.jpg</code>, <code>iconName_c.jpg</code>, the configuration is as follows:</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-5.png" alt="&-5.png" style="display:inline;" />
+
+<p>Add the suffix name after the extension name<font color='red'>|{[suffixes…]}</font></p>
+<blockquote>
+<p>/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png)</p>
+<p>/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png)<font color='red'>|{[a,b,c]}</font></p>
+</blockquote>
+<p>If there are multiple extensions, and multiple extensions have suffix names. The configuration is as follows:</p>
+<blockquote>
+<p>Grammar： &lt;path&gt;|(suffix1,suffix2…)|{[suffix1_extension1,suffix1_extension2…],[suffix2_extension1,suffix2_extension2…]}</p>
+</blockquote>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-6.png" alt="&-6.png" style="display:inline;" />
+
+<blockquote>
+<p>/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png,jpg)</p>
+<p>/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png,jpg)<font color='red'>|{[a,b,c],[a,d]}</font></p>
+</blockquote>
+<p>But there is a situation that needs attention: if there are multiple extensions: png, svg, png have a, b, and c suffixes, and svg has no suffixes. The configuration is as follows:</p>
+<blockquote>
+<p>Grammar： &lt;path&gt;|(suffix1,suffix2…)|{[suffix1_extension1,suffix1_extension2…],[]}</p>
+</blockquote>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-7.png" alt="&-7.png" style="display:inline;" />
+
+<p><font color='red'>It should be noted that although pictures in svg format do not have a suffix, the placeholder <code>[]</code> of the suffix name still needs to be retained. </font> Here are some correct and incorrect configurations:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Status</th>
+<th align="left">Configure value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg" alt="Right"></td>
+<td align="left">/Users/obiscr/Workspace/tmp/excel_analysis/foo</td>
+<td></td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg" alt="Right"></td>
+<td align="left">/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png)</td>
+<td></td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg" alt="Right"></td>
+<td align="left">/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png,jpg)</td>
+<td></td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg" alt="Right"></td>
+<td align="left">/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png)|{[a,b,c]}</td>
+<td></td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg" alt="Right"></td>
+<td align="left">/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png,svg)|{[a,b,c],[a,d]}</td>
+<td></td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/wrong.svg" alt="Wrong"></td>
+<td align="left">/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png,svg)<font color='red'>|{[a,b,c]}</font></td>
+<td>There are two extensions, but only one set of suffixes are configured</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/wrong.svg" alt="Wrong"></td>
+<td align="left">/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png)<font color='red'>|{[a,b,c],[a,d]}</font></td>
+<td>There is an extension, but two sets of suffixes are configured</td>
+</tr>
+</tbody></table>
+<h3 id="3-3"><a href="#3-3" class="headerlink" title="3.3 %"></a>3.3 %</h3><h4 id="3-3-1-date"><a href="#3-3-1-date" class="headerlink" title="3.3.1 %date"></a>3.3.1 %date</h4><blockquote>
+<p>Grammar：&lt;leftDateStr&gt; - &lt;rightDateStr&gt;</p>
+</blockquote>
+<p>Limit the time in a certain time column to a certain range, if not, enter the error log. The configuration is as follows: limit the commodity production log of <code>商品表.xls</code> in <code>2018/01/01-2020/12/12</code></p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/date-1.png" alt="date-1.png" style="display:inline;" />
+
+<p>Open the 商品表.xls after saving, the output content is as follows:</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/date-2.png" alt="date-2.png" style="display:inline;" />
+
+<h4 id="3-3-2-number"><a href="#3-3-2-number" class="headerlink" title="3.3.2 %number"></a>3.3.2 %number</h4><blockquote>
+<p>Grammar：&lt;leftValue&gt; - &lt;rightValue&gt;</p>
+</blockquote>
+<p>Limit the value of a certain column to be numeric and in a certain range. If it is not a number or is not within the range, an error log is output. The configuration and corresponding output content are as follows:</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/number-1.png" alt="number-1.png" style="display:inline;" />
+
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/number-2.png" alt="number-2.png" style="display:inline;" />
+
+<h4 id="3-3-3-duplicate"><a href="#3-3-3-duplicate" class="headerlink" title="3.3.3 %duplicate"></a>3.3.3 %duplicate</h4><blockquote>
+<p>Grammar：&lt;true&gt; or &lt;false&gt;</p>
+</blockquote>
+<p>Determine whether a column has duplicate configuration content. The default value is: <code>false</code> . No duplicate check will be performed. If you need to check, the configuration is <code>true</code>, and an error log will be output after repeated configuration is found. The configuration and corresponding output content are as follows:</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/duplicate-1.png" alt="duplicate-1.png" style="display:inline;" />
+
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/duplicate-2.png" alt="duplicate-2.png" style="display:inline;" />
+
+<h4 id="3-3-4-empty"><a href="#3-3-4-empty" class="headerlink" title="3.3.4 %empty"></a>3.3.4 %empty</h4><blockquote>
+<p>Grammar：&lt;true&gt; or &lt;false&gt;</p>
+</blockquote>
+<p>Determine whether a column has a null value. The default value is <code>true</code>, null values are allowed. If null values are not allowed in a column, configure it as <code>false</code>. An error log will be output when a null value is found. The configuration and corresponding output content are as follows:</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/empty-1.png" alt="empty-1.png" style="display:inline;" />
+
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/empty-2.png" alt="empty-2.png" style="display:inline;" />
+
+<h4 id="3-3-5-relation"><a href="#3-3-5-relation" class="headerlink" title="3.3.5 %relation"></a>3.3.5 %relation</h4><blockquote>
+<p>Grammar：&lt;separator&gt;|&lt;table name&gt;.&lt;field name&gt; But the table name and field name must be enclosed in backticks (`).</p>
+<p>The default separator is <code>;</code> which can be omitted. That is: &lt;table name&gt;.&lt;field name&gt;. If it is in the same table, for example, the following <code>出售的商品id</code> and <code>出售的商品数量</code> are in the same table, the table name can be omitted. That is: &lt;field name&gt;.</p>
+</blockquote>
+<p>Check the correlation between the fields. For example, in one case, the fields that exist need to be separated by symbols. such as:</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/relation-3.png" alt="relation-3.png" style="display:inline;" />
+
+<p>In this case: the data between the two columns of <code>出售的商品id</code> and <code>出售的商品数量</code> needs a one-to-one correspondence. After the id column is separated, there are several data, and the quantity column also needs several.</p>
+<p>Here are some detailed descriptions of the configuration:</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/relation-1.png" alt="relation-1.png" style="display:inline;" />
+
+<p>There are 4 configurations in the above picture:</p>
+<ol>
+<li>If it is in the same table, the default separator is used. Configure one: &#96;Number of products sold&#96;</li>
+<li>If it is in the same table, but using a custom separator, such as <code>,</code> use configuration two: ,|&#96;The number of goods sold&#96;</li>
+<li>If it is not in the same table, use a custom separator. For example, <code>,</code> can use configuration three:,|&#96;Commodity sales table&#96;.&#96;The number of goods sold&#96;</li>
+<li>If it is not in the same table, the default separator is used. Configure four: &#96;Commodity sales table&#96;.&#96;Number of commodities sold&#96;</li>
+</ol>
+<blockquote>
+<p>It should be noted that: <font color='red'>in the same table or not in the same table </font> refers to whether the two <code>fields</code> to be compared are in the same excel file.</p>
+</blockquote>
+<p>For example: If you compare columnE of Excel1 with columnF of Excel2, the complete configuration is as follows:</p>
+<ul>
+<li><p>Use the default separator (;)</p>
+<table>
+<thead>
+<tr>
+<th align="left">fileName</th>
+<th align="left">columnName</th>
+<th>isEnable</th>
+<th>ruleType</th>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Excel1</td>
+<td align="left">columnE</td>
+<td>true</td>
+<td>%</td>
+<td>relation</td>
+<td>&#96;Excel2&#96;.&#96;columnF&#96;</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>Use custom separator (,)</p>
+<table>
+<thead>
+<tr>
+<th align="left">fileName</th>
+<th align="left">columnName</th>
+<th>isEnable</th>
+<th>ruleType</th>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Excel1</td>
+<td align="left">columnE</td>
+<td>true</td>
+<td>%</td>
+<td>relation</td>
+<td>,|&#96;Excel2&#96;.&#96;columnF&#96;</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="3-4"><a href="#3-4" class="headerlink" title="3.4 ,|;"></a>3.4 ,|;</h3><h4 id="3-4-1"><a href="#3-4-1" class="headerlink" title="3.4.1 ,"></a>3.4.1 ,</h4><h4 id="3-4-2"><a href="#3-4-2" class="headerlink" title="3.4.2 ;"></a>3.4.2 ;</h4><h3 id="3-5-！"><a href="#3-5-！" class="headerlink" title="3.5 ！"></a>3.5 ！</h3><blockquote>
+<p>Grammar：&lt;anything&gt; or &lt;leftValue&gt; - &lt;rightValue&gt;</p>
+</blockquote>
+<p>Restrict the execution (use) scope of other operators in a certain column. The precedence of <code>!</code> is higher than that of other operators. For example, the following configuration:</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/number-1.png" alt="number-1.png" style="display:inline;" />
+
+<p>Output under normal circumstances:</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/number-2.png" alt="number-2.png" style="display:inline;" />
+
+<p>Add the <code>!</code> rule to the <code>商品价格</code> of the <code>商品表</code>. Before setting the operation on this column, first whether the condition of <code>商品id=3</code> is met. Only when it is satisfied will other operations be carried out.</p>
+<p>Of course, a fixed value is used here: 3. You can also set a range, such as: 3-5, but the premise is that the column used for judgment (that is, <code>Key</code>) must be a number.</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/!-1.png" alt="!-1.png" style="display:inline;" />
+
+<p>The results are as follows:</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/!-2.png" alt="!-2.png" style="display:inline;" />
+
+<p>As you can see, when loading for the second time: the rule of %number only takes effect for the column with 商品id=3. Other columns will skip matching.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/12/13/ExcelAnalysis-Documentation_EN/" data-id="cko6qo7fr001dw6uedqaud35t" data-title="ExcelAnalysis-Documentation" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tool/" rel="tag">Tool</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/12/13/ExcelAnalysis-Documentation/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          ExcelAnalysis-说明文档
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/09/15/IDEA-Plugin-ExcelReader/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">IDEA Plugin - ExcelReader</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/IDEA/">IDEA</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/QT/">QT</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A0%81/">编码</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Plugin/" rel="tag">Plugin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tool/" rel="tag">Tool</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/Plugin/" style="font-size: 15px;">Plugin</a> <a href="/tags/Tool/" style="font-size: 20px;">Tool</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 15px;">算法</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/05/02/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/02/ExcelReader-2.0.6/">ExcelReader 2.0.6 version now released！</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/14/qtxlsx/">在 QT 中添加 QtXlsx 模块</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/06/macOS-QT-Mysql/">macOS 安装 QT 5.13.2 并配置mysql驱动</a>
+          </li>
+        
+          <li>
+            <a href="/2021/02/27/git/">Git</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

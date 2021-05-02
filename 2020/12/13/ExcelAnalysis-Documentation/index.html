@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>ExcelAnalysis-说明文档 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="1. 界面说明1.1 主界面主界面主要分为三个区域：  左侧 文件列表 加载完文件之后，显示所有的文件列表 中间 显示文件内容 底下 显示解析的时候输出的日志   1.2 设置界面1.2.1 语言 设置  &gt; Language。设置语言，设置完需要重新启动才能生效。  1.2.2 规则 设置 &gt; 规则。分为规则文件和规则配置。 上面是对规则文件的操作。可以添加多个文件，但是同时只能有一">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ExcelAnalysis-说明文档">
+<meta property="og:url" content="http://example.com/2020/12/13/ExcelAnalysis-Documentation/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1. 界面说明1.1 主界面主界面主要分为三个区域：  左侧 文件列表 加载完文件之后，显示所有的文件列表 中间 显示文件内容 底下 显示解析的时候输出的日志   1.2 设置界面1.2.1 语言 设置  &gt; Language。设置语言，设置完需要重新启动才能生效。  1.2.2 规则 设置 &gt; 规则。分为规则文件和规则配置。 上面是对规则文件的操作。可以添加多个文件，但是同时只能有一">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/documention-mainpanel.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/settings.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/documention-language.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/settings.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/documention-rules.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/menu-open.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/menu-saveall.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/refresh.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/back.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/forward.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/compile.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/run.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/runAll.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/suspend.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/settings.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/logVerbose.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/fatalError.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/export.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/find.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/add.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/remove2.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/copy.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/setDefault.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/run.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/add.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/remove2.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/copy.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/@-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/@-2.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-2.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-3.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-4.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-5.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-6.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-7.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/wrong.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/wrong.svg">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/date-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/date-2.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/number-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/number-2.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/duplicate-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/duplicate-2.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/empty-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/empty-2.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/relation-3.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/relation-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/number-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/number-2.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/!-1.png">
+<meta property="og:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/!-2.png">
+<meta property="article:published_time" content="2020-12-13T11:38:18.000Z">
+<meta property="article:modified_time" content="2021-05-02T05:33:36.360Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Tool">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/documention-mainpanel.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-ExcelAnalysis-Documentation" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/12/13/ExcelAnalysis-Documentation/" class="article-date">
+  <time class="dt-published" datetime="2020-12-13T11:38:18.000Z" itemprop="datePublished">2020-12-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%BC%96%E7%A0%81/">编码</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      ExcelAnalysis-说明文档
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="1-界面说明"><a href="#1-界面说明" class="headerlink" title="1. 界面说明"></a>1. 界面说明</h1><h3 id="1-1-主界面"><a href="#1-1-主界面" class="headerlink" title="1.1 主界面"></a>1.1 主界面</h3><p>主界面主要分为三个区域：</p>
+<ul>
+<li>左侧 文件列表 加载完文件之后，显示所有的文件列表</li>
+<li>中间 显示文件内容</li>
+<li>底下 显示解析的时候输出的日志</li>
+</ul>
+<p><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/documention-mainpanel.png" alt="alt main_panel"></p>
+<h3 id="1-2-设置界面"><a href="#1-2-设置界面" class="headerlink" title="1.2 设置界面"></a>1.2 设置界面</h3><h4 id="1-2-1-语言"><a href="#1-2-1-语言" class="headerlink" title="1.2.1 语言"></a>1.2.1 语言</h4><p><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/settings.svg" alt="settings " style="display:inline" /> <code>设置</code>  &gt; Language。设置语言，设置完需要重新启动才能生效。</p>
+<p><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/documention-language.png" alt="alt main_panel"></p>
+<h4 id="1-2-2-规则"><a href="#1-2-2-规则" class="headerlink" title="1.2.2 规则"></a>1.2.2 规则</h4><p><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/settings.svg" alt="settings " style="display:inline" /> <code>设置</code> &gt; 规则。分为规则文件和规则配置。</p>
+<p>上面是对规则文件的操作。可以添加多个文件，但是同时只能有一个文件生效。这个文件可以使用 <code>git</code> 或者 <code>svn</code> 进行管理，如果有需要的话。</p>
+<p>下面是显示规则文件的具体配置内容。点击某个文件之后，会在下面显示选中文件的具体配置内容。</p>
+<p>配置文件的存储使用的是 <code>json</code> 格式。</p>
+<p><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/documention-rules.png" alt="alt main_panel"></p>
+<h1 id="2-操作按钮说明"><a href="#2-操作按钮说明" class="headerlink" title="2. 操作按钮说明"></a>2. 操作按钮说明</h1><h3 id="2-1-主界面"><a href="#2-1-主界面" class="headerlink" title="2.1 主界面"></a>2.1 主界面</h3><table>
+<thead>
+<tr>
+<th align="left">图标</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/menu-open.svg" alt="open"></td>
+<td align="left">打开文件</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/menu-saveall.svg" alt="saveAll"></td>
+<td align="left">保存</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/refresh.svg" alt="refresh"></td>
+<td align="left">从磁盘重新加载文件</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/back.svg" alt="back"></td>
+<td align="left">上一个</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/forward.svg" alt="forward"></td>
+<td align="left">下一个</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/compile.svg" alt="compile"></td>
+<td align="left">编译规则配置</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/run.svg" alt="run" style="zoom:120%;" /></td>
+<td align="left">运行默认（启用的配置文件）</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/runAll.svg" alt="runAll"></td>
+<td align="left">运行所有配置文件</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/suspend.svg" alt="suspend"></td>
+<td align="left">停止运行</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/settings.svg" alt="settings"></td>
+<td align="left">设置</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/logVerbose.svg" alt="logVerbose"></td>
+<td align="left">显示/隐藏日志</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/fatalError.svg" alt="fatalError"></td>
+<td align="left">显示/隐藏错误</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/export.svg" alt="export"></td>
+<td align="left">导出运行结果</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/find.svg" alt="find"></td>
+<td align="left">全局查找</td>
+</tr>
+</tbody></table>
+<h3 id="2-2-规则设置界面"><a href="#2-2-规则设置界面" class="headerlink" title="2.2 规则设置界面"></a>2.2 规则设置界面</h3><h4 id="2-2-1-规则文件设置"><a href="#2-2-1-规则文件设置" class="headerlink" title="2.2.1 规则文件设置"></a>2.2.1 规则文件设置</h4><table>
+<thead>
+<tr>
+<th align="left">图标</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/add.svg" alt="Add"></td>
+<td align="left">添加规则文件</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/remove2.svg" alt="Remove"></td>
+<td align="left">移除规则文件</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/copy.svg" alt="Copy"></td>
+<td align="left">复制规则文件</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/setDefault.svg" alt="setDefault"></td>
+<td align="left">设置为默认文件（<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/run.svg" alt="Run" style="display:inline;zoom:120%;" />运行的时候根据默认文件的内容进行解析）</td>
+</tr>
+</tbody></table>
+<h4 id="2-2-2-规则配置设置"><a href="#2-2-2-规则配置设置" class="headerlink" title="2.2.2 规则配置设置"></a>2.2.2 规则配置设置</h4><table>
+<thead>
+<tr>
+<th align="left">图标</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/add.svg" alt="Add"></td>
+<td align="left">添加规则配置</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/remove2.svg" alt="Remove"></td>
+<td align="left">移除规则配置</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/copy.svg" alt="Copy"></td>
+<td align="left">复制规则配置</td>
+</tr>
+</tbody></table>
+<h1 id="3-规则说明"><a href="#3-规则说明" class="headerlink" title="3. 规则说明"></a>3. 规则说明</h1><h3 id="3-1"><a href="#3-1" class="headerlink" title="3.1 @"></a>3.1 <strong>@</strong></h3><blockquote>
+<p>语法：&lt;任意值&gt;</p>
+</blockquote>
+<p><code>@</code> 主要是用来替换输出内容。当excel文件单元格的值等于配置的键（Key），则显示的时候会显示值（Value）。</p>
+<p>比如有如下配置：</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/@-1.png" alt="@-1.png" style="display:inline;" />
+
+<p>保存配置之后。打开 <code>商品表.xls</code> 显示如下：</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/@-2.png" alt="@-2.png" style="display:inline;" />
+
+<p>可以看到 商品价格列 符合条件的 <code>Key</code> 都被 替换成了 <code>Value</code> 。</p>
+<h3 id="3-2-amp"><a href="#3-2-amp" class="headerlink" title="3.2 &amp;"></a>3.2 &amp;</h3><p><code>&amp;</code> 主要是用来检查图片是否存在。不存在会输出错误日志。</p>
+<h4 id="3-2-1-配置了全名称（包含扩展名）"><a href="#3-2-1-配置了全名称（包含扩展名）" class="headerlink" title="3.2.1 配置了全名称（包含扩展名）"></a>3.2.1 配置了全名称（包含扩展名）</h4><blockquote>
+<p>语法：&lt;path&gt;</p>
+</blockquote>
+<p>处理包含扩展名的文件时：直接拿列中配置的值（如下图的 <code>icon_1</code> , <code>icon_2</code> , <code>icon_3</code> , <code>...</code>）去规则目录 <code>/Users/obiscr/Workspace/tmp/excel_analysis/foo</code> 下查找，不存在则输出日志。 </p>
+<p>有如下配置（第四行）：</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-1.png" alt="&-1.png" style="display:inline;" />
+
+<p>保存配置之后。打开 <code>商品表.xls</code> 显示如下：</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-2.png" alt="&-2.png" style="display:inline;" />
+
+<p>因为 foo 只是一个空目录，所有的icon都不存在，会输出错误日志。</p>
+<h4 id="3-2-2-只配置了文件名"><a href="#3-2-2-只配置了文件名" class="headerlink" title="3.2.2 只配置了文件名"></a>3.2.2 只配置了文件名</h4><blockquote>
+<p>语法：&lt;path&gt;|(suffix)</p>
+</blockquote>
+<p>这种情况下：只配置了文件名，没有扩展名。则需要手动指定可能的扩展名。程序会自动拼接 <code>文件名+扩展名</code>， 然后去规则目录 <code>/Users/obiscr/Workspace/tmp/excel_analysis/foo</code> 下查找，不存在则输出日志。</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-3.png" alt="&-3.png" style="display:inline;" />
+
+<p>相比于之前的配置增加了 <code>|(png)</code> 。</p>
+<blockquote>
+<p>/Users/obiscr/Workspace/tmp/excel_analysis/foo</p>
+<p>/Users/obiscr/Workspace/tmp/excel_analysis/foo<font color='red'>|(png)</font></p>
+</blockquote>
+<h4 id="3-2-3-只配置了文件名，并且有多个文件扩展名"><a href="#3-2-3-只配置了文件名，并且有多个文件扩展名" class="headerlink" title="3.2.3 只配置了文件名，并且有多个文件扩展名"></a>3.2.3 只配置了文件名，并且有多个文件扩展名</h4><blockquote>
+<p>语法：&lt;path&gt;|(suffix1,suffix2…)</p>
+</blockquote>
+<p>如果有多个扩展名，每个扩展名用 <code>,</code> 隔开。</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-4.png" alt="&-4.png" style="display:inline;" />
+
+<p>相比于之前的配置增加了一个新的扩展名 <code>,jpg</code> 。</p>
+<blockquote>
+<p>/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png)</p>
+<p>/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png<font color='red'>,jpg</font>)</p>
+</blockquote>
+<h4 id="3-2-4-有后缀名"><a href="#3-2-4-有后缀名" class="headerlink" title="3.2.4 有后缀名"></a>3.2.4 有后缀名</h4><blockquote>
+<p>语法：&lt;path&gt;|(suffix)|{[extension1,extension2…]}</p>
+</blockquote>
+<p>比如有图片 <code>iconName_a.jpg</code>,  <code>iconName_b.jpg</code>,  <code>iconName_c.jpg</code> ，配置如下：</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-5.png" alt="&-5.png" style="display:inline;" />
+
+<p>在扩展名后面添加后缀名<font color='red'>|{[suffixes…]}</font></p>
+<blockquote>
+<p>/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png)</p>
+<p>/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png)<font color='red'>|{[a,b,c]}</font></p>
+</blockquote>
+<p>如果存在多个扩展名，并且多个扩展名都有后缀名。则配置如下：</p>
+<blockquote>
+<p>语法： &lt;path&gt;|(suffix1,suffix2…)|{[suffix1_extension1,suffix1_extension2…],[suffix2_extension1,suffix2_extension2…]}</p>
+</blockquote>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-6.png" alt="&-6.png" style="display:inline;" />
+
+<blockquote>
+<p>/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png,jpg)</p>
+<p>/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png,jpg)<font color='red'>|{[a,b,c],[a,d]}</font></p>
+</blockquote>
+<p>但是有一种情况需要注意：假如说有多个扩展名：png，svg，png 有 a，b，c的后缀，svg没有后缀。配置如下：</p>
+<blockquote>
+<p>语法： &lt;path&gt;|(suffix1,suffix2…)|{[suffix1_extension1,suffix1_extension2…],[]}</p>
+</blockquote>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/&-7.png" alt="&-7.png" style="display:inline;" />
+
+<p><font color='red'>需要注意的就是，尽管svg格式的图片是没有后缀的，但是后缀名的占位符 <code>[]</code> 依然需要保留。</font> 下面列举几种正确与错误的配置：</p>
+<table>
+<thead>
+<tr>
+<th align="left">状态</th>
+<th align="left">配置</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg" alt="Right"></td>
+<td align="left">/Users/obiscr/Workspace/tmp/excel_analysis/foo</td>
+<td></td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg" alt="Right"></td>
+<td align="left">/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png)</td>
+<td></td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg" alt="Right"></td>
+<td align="left">/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png,jpg)</td>
+<td></td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg" alt="Right"></td>
+<td align="left">/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png)|{[a,b,c]}</td>
+<td></td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/right.svg" alt="Right"></td>
+<td align="left">/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png,svg)|{[a,b,c],[a,d]}</td>
+<td></td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/wrong.svg" alt="Wrong"></td>
+<td align="left">/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png,svg)<font color='red'>|{[a,b,c]}</font></td>
+<td>有两个扩展名，但是只配置了一组后缀</td>
+</tr>
+<tr>
+<td align="left"><img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/icons/wrong.svg" alt="Wrong"></td>
+<td align="left">/Users/obiscr/Workspace/tmp/excel_analysis/foo|(png)<font color='red'>|{[a,b,c],[a,d]}</font></td>
+<td>有一个扩展名，但是配置了两组后缀</td>
+</tr>
+</tbody></table>
+<h3 id="3-3"><a href="#3-3" class="headerlink" title="3.3 %"></a>3.3 %</h3><h4 id="3-3-1-date"><a href="#3-3-1-date" class="headerlink" title="3.3.1 %date"></a>3.3.1 %date</h4><blockquote>
+<p>语法：&lt;leftDateStr&gt; - &lt;rightDateStr&gt;</p>
+</blockquote>
+<p>限定某一时间列的时间在某个范围之间，若不在，则输出错误日志。如下配置：限定 <code>商品表.xls</code> 的商品生产日志在 <code>2018/01/01 - 2020/12/12</code> </p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/date-1.png" alt="date-1.png" style="display:inline;" />
+
+<p>保存后打开商品表.xls，输出内容如下：</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/date-2.png" alt="date-2.png" style="display:inline;" />
+
+<h4 id="3-3-2-number"><a href="#3-3-2-number" class="headerlink" title="3.3.2 %number"></a>3.3.2 %number</h4><blockquote>
+<p>语法：&lt;leftValue&gt; - &lt;rightValue&gt;</p>
+</blockquote>
+<p>限定某一列的值是数字类型并且在某个范围。若不是数字或者不在范围内，则输入错误日志。配置以及对应的输出内容如下：</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/number-1.png" alt="number-1.png" style="display:inline;" />
+
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/number-2.png" alt="number-2.png" style="display:inline;" />
+
+<h4 id="3-3-3-duplicate"><a href="#3-3-3-duplicate" class="headerlink" title="3.3.3 %duplicate"></a>3.3.3 %duplicate</h4><blockquote>
+<p>语法：&lt;true&gt; 或者 &lt;false&gt;</p>
+</blockquote>
+<p>判断某列是否有重复的配置内容。默认值为：<code>false</code> 不会进行重复检查。如果需要检查，则配置为 <code>true</code> , 发现重复配置后会输出错误日志。配置以及对应的输出内容如下：</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/duplicate-1.png" alt="duplicate-1.png" style="display:inline;" />
+
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/duplicate-2.png" alt="duplicate-2.png" style="display:inline;" />
+
+<h4 id="3-3-4-empty"><a href="#3-3-4-empty" class="headerlink" title="3.3.4 %empty"></a>3.3.4 %empty</h4><blockquote>
+<p>语法：&lt;true&gt; 或者 &lt;false&gt;</p>
+</blockquote>
+<p>判断某列是否有空值。默认值为：<code>true</code> ，允许有空值。如果不允许某一列出现空值，则配置为 <code>false</code>。发现空值会输出错误日志。配置以及对应的输出内容如下：    </p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/empty-1.png" alt="empty-1.png" style="display:inline;" />
+
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/empty-2.png" alt="empty-2.png" style="display:inline;" />
+
+<h4 id="3-3-5-relation"><a href="#3-3-5-relation" class="headerlink" title="3.3.5 %relation"></a>3.3.5 %relation</h4><blockquote>
+<p>语法：Value（值）语法说明：&lt;分隔符&gt;|&lt;表名&gt;.&lt;字段名&gt; 但是表名和字段名一定要用反引号（`）括起来。</p>
+<p>默认的分隔符是 <code>;</code> 可以省略。即：&lt;表名&gt;.&lt;字段名&gt;。如果是在同一张表，比如下面的<code>出售的商品id</code> 和 <code>出售的商品数量</code> 是在同一张表，则表名可以省略。即：&lt;字段名&gt; 。</p>
+</blockquote>
+<p>检查字段之间的关联性。比如说有种情况下存在的字段是需要符号分隔的。比如</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/relation-3.png" alt="relation-3.png" style="display:inline;" />
+
+<p>这种情况下：<code>出售的商品id</code> 和 <code>出售的商品数量</code> 两列之间的数据是需要一一对应的。id列分隔后有几个数据，数量列也就需要几个。</p>
+<p>下面列举一些配置详细说明：</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/relation-1.png" alt="relation-1.png" style="display:inline;" />
+
+<p>上图一共有4条配置：</p>
+<ol>
+<li>如果是在同一张表里，使用的默认的分隔符。配置一即可 ： &#96;出售的商品数量&#96;</li>
+<li>如果是在同一张表里，但是使用的是自定义的分隔符，比如 <code>,</code> 使用配置二即可：,|&#96;出售的商品数量&#96;</li>
+<li>如果是不在同一张表里，使用的自定义的分隔符。比如 <code>,</code> 使用配置三即可：,|&#96;商品出售表&#96;.&#96;出售的商品数量&#96;</li>
+<li>如果是不在同一张表里，使用的默认的分隔符。配置四即可：&#96;商品出售表&#96;.&#96;出售的商品数量&#96;</li>
+</ol>
+<blockquote>
+<p>需要注意的是： <font color='red'>在同一张表 或者 不在同一张表指的是 </font>要比较的两个 <code>字段</code> 是否在同一个excel文件。</p>
+</blockquote>
+<p>举个例子：如果拿 Excel1 的 columnE 和 Excel2 的 columnF 比较，完整配置如下：</p>
+<ul>
+<li><p>使用默认的分隔符（;）</p>
+<table>
+<thead>
+<tr>
+<th align="left">fileName</th>
+<th align="left">columnName</th>
+<th>isEnable</th>
+<th>ruleType</th>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Excel1</td>
+<td align="left">columnE</td>
+<td>true</td>
+<td>%</td>
+<td>relation</td>
+<td>&#96;Excel2&#96;.&#96;columnF&#96;</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>使用自定义分隔符（,）</p>
+<table>
+<thead>
+<tr>
+<th align="left">fileName</th>
+<th align="left">columnName</th>
+<th>isEnable</th>
+<th>ruleType</th>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Excel1</td>
+<td align="left">columnE</td>
+<td>true</td>
+<td>%</td>
+<td>relation</td>
+<td>,|&#96;Excel2&#96;.&#96;columnF&#96;</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="3-4"><a href="#3-4" class="headerlink" title="3.4 ,|;"></a>3.4 ,|;</h3><h4 id="3-4-1"><a href="#3-4-1" class="headerlink" title="3.4.1 ,"></a>3.4.1 ,</h4><h4 id="3-4-2"><a href="#3-4-2" class="headerlink" title="3.4.2 ;"></a>3.4.2 ;</h4><h3 id="3-5-！"><a href="#3-5-！" class="headerlink" title="3.5 ！"></a>3.5 ！</h3><blockquote>
+<p>语法：&lt;任何值&gt; 或者 &lt;leftValue&gt; - &lt;rightValue&gt;</p>
+</blockquote>
+<p>限定某一列其他操作符的执行（使用）范围。<code>!</code> 的优先级要比其他的操作符优先级高。比如有以下配置：</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/number-1.png" alt="number-1.png" style="display:inline;" />
+
+<p>正常情况下输出：</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/number-2.png" alt="number-2.png" style="display:inline;" />
+
+<p>对 <code>商品表</code> 的 <code>商品价格</code> 添加 <code>!</code> 规则。设定对这个列的操作前，先 <code>商品id=3</code> 这个条件是否满足。只有满足的情况下才会进行其他的操作。</p>
+<p>当然这里用了一个固定的值：3。还可以设定一个范围，比如：3 - 5 ，但前提是用来做判断的这一列（也就是 <code>Key</code>），必须要是数字才行。</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/!-1.png" alt="!-1.png" style="display:inline;" />
+
+<p>显示结果如下：</p>
+<img src="https://obiscr.oss-cn-hongkong.aliyuncs.com/res/ExcelAnalysis/docs/!-2.png" alt="!-2.png" style="display:inline;" />
+
+<p>可以看到，第二次加载的时候：%number 的规则 只对商品id=3的列生效了。其他的列会跳过匹配。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/12/13/ExcelAnalysis-Documentation/" data-id="cko6qo7fq001cw6ueg6f8hsoc" data-title="ExcelAnalysis-说明文档" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tool/" rel="tag">Tool</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/02/27/git/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Git
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/12/13/ExcelAnalysis-Documentation_EN/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">ExcelAnalysis-Documentation</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/IDEA/">IDEA</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/QT/">QT</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A0%81/">编码</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Plugin/" rel="tag">Plugin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tool/" rel="tag">Tool</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/Plugin/" style="font-size: 15px;">Plugin</a> <a href="/tags/Tool/" style="font-size: 20px;">Tool</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 15px;">算法</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/05/02/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/02/ExcelReader-2.0.6/">ExcelReader 2.0.6 version now released！</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/14/qtxlsx/">在 QT 中添加 QtXlsx 模块</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/06/macOS-QT-Mysql/">macOS 安装 QT 5.13.2 并配置mysql驱动</a>
+          </li>
+        
+          <li>
+            <a href="/2021/02/27/git/">Git</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
